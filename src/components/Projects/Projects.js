@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
@@ -85,6 +86,80 @@ function Projects() {
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+            />
+          </Col>
+        </Row>
+      </Container>
+    </Container>
+  );
+}
+
+export default Projects;
+
+*/
+
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import ProjectCard from "./ProjectCards";
+import Particle from "../Particle";
+import googleyelp from "../../Assets/Projects/proyecto_googleyelp.png";
+import mercadofinanciero from "../../Assets/Projects/proyecto_mercadofinanciero.png";
+import accidentesviales from "../../Assets/Projects/proyecto_accidentesviales.png";
+import steam from "../../Assets/Projects/proyecto_steam.png";
+
+function Projects() {
+  return (
+    <Container fluid className="project-section">
+      <Particle />
+      <Container>
+        <h1 className="project-heading">
+          Mis trabajos <strong className="purple">recientes</strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Aquí hay algunos proyectos en los que he trabajado recientemente.
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={googleyelp}
+              isBlog={false}
+              title="Proyecto Google-Yelp"
+              description="Este proyecto consiste en analizar el mercado estadounidense referido a restaurantes y afines, desarrollando el rol de una empresa consultora de datos, mediante la utilización y extracción de los mismos de las fuentes de Yelp y Google Maps. Se analizarán los restaurantes en el estado de Florida, entre los años 2017-2022. Se busca impactar tanto a empresarios como a clientes al proporcionar información valiosa sobre la percepción de la ronda de inversores y brindar recomendaciones personalizadas. "
+              ghLink="https://github.com/camillaneza/PF_Google_Yelp"
+              demoLink="https://dainsightsolutions.streamlit.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mercadofinanciero}
+              isBlog={false}
+              title="Proyecto Predicciones del Mercado Financiero"
+              description="En un mundo donde la conciencia sobre la importancia de las prácticas financieras responsables está en constante crecimiento, este proyecto se centra en impulsar la adopción de hábitos financieros sostenibles en la vida diaria de las personas. "
+              ghLink="https://github.com/camillaneza/c16-106-n-data-bi"
+              demoLink="https://finanalytica.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={accidentesviales}
+              isBlog={false}
+              title="Proyecto Siniestros Viales en CABA"
+              description="Proyecto de análisis de datos, con el fin de generar información que le permita a las autoridades locales tomar medidas para disminuir la cantidad de víctimas fatales de los siniestros viales. Para ello, se puso a disposición un conjunto de datos sobre homicidios en siniestros viales acaecidos en la Ciudad de Buenos Aires durante el periodo 2016-2021."
+              ghLink="https://github.com/camillaneza/PI2_Siniestros_Viales"
+              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={steam}
+              isBlog={false}
+              title="Proyecto MLOps Plataforma Steam"
+              description="En este proyecto se trabajó sobre la plataforma de juegos Steam, desarrollando un rol de Data Engineer para lograr tener un MVP (Producto Mínimo Viable). En base a 3 conjuntos de datos iniciales, se desarrolló el correspondiente proceso de ETL (Extracción, Transformación y Carga) y de EDA (Análisis Exploratorio de Datos). Además, se realizó un análisis de sentimiento con PNL, y un modelo de aprendizaje automático, con un sistema de recomendación."
+              ghLink="https://github.com/camillaneza/PI1_MLOps_Steam_Games"
+              
             />
           </Col>
         </Row>

@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
@@ -69,3 +70,46 @@ function Techstack() {
 }
 
 export default Techstack;
+*/
+
+import React from "react";
+import { Col, Row } from "react-bootstrap";
+import { DiPython, DiMysql } from "react-icons/di";
+import { SiPowerbi, SiNumpy, SiPandas, SiDocker, SiGooglecloud, SiScikitlearn, SiAmazonaws } from "react-icons/si";
+
+function Techstack() {
+  return (
+    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiPython />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMysql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPowerbi />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNumpy />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPandas />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGooglecloud />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiScikitlearn />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAmazonaws />
+      </Col>
+    </Row>
+  );
+}
+
+export default Techstack;
+
